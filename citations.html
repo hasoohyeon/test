@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관련 인용문헌</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">주요 논문</a></li>
+            <li><a href="citations.html" class="active">관련 인용문헌</a></li>
+            <li><a href="reactions.html">대중 반응</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>관련 인용문헌 및 기사</h1>
+        
+        <div class="filter-container">
+            <button class="filter-button active" onclick="filterCitations('all')">전체보기</button>
+            <button class="filter-button" onclick="filterCitations('ai')">AI/머신러닝</button>
+            <button class="filter-button" onclick="filterCitations('robotics')">로봇공학</button>
+            <button class="filter-button" onclick="filterCitations('energy')">재생에너지</button>
+        </div>
+
+        <section class="citation" data-category="ai">
+            <h2>AI 기반 제조 최적화 관련 인용문헌</h2>
+            <ul>
+                <li>
+                    <a href="https://www.sciencedirect.com/science/article/pii/S0925527323001866">
+                        "AI-Driven Process Optimization in Manufacturing Systems"
+                    </a>
+                    <p class="citation-info">제조 시스템의 AI 기반 최적화 방법론을 제시</p>
+                </li>
+                <li>
+                    <a href="https://ieeexplore.ieee.org/document/9836547">
+                        "Machine Learning Techniques for Manufacturing Process Optimization"
+                    </a>
+                    <p class="citation-info">머신러닝 기술을 활용한 제조 프로세스 최적화 연구</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="citation" data-category="robotics">
+            <h2>로봇공학 관련 인용문헌</h2>
+            <ul>
+                <li>
+                    <a href="https://ieeexplore.ieee.org/document/9787245">
+                        "AI-Powered Robotics: Current Trends and Future Perspectives"
+                    </a>
+                    <p class="citation-info">AI 기술이 로봇공학에 미치는 영향과 미래 전망</p>
+                </li>
+                <li>
+                    <a href="https://www.nature.com/articles/s41598-023-32546-8">
+                        "Intelligent Robotic Systems in Industry 4.0"
+                    </a>
+                    <p class="citation-info">4차 산업혁명 시대의 지능형 로봇 시스템 연구</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="citation" data-category="energy">
+            <h2>재생에너지 관련 인용문헌</h2>
+            <ul>
+                <li>
+                    <a href="https://www.sciencedirect.com/science/article/pii/S0960148123004562">
+                        "Optimization of Hybrid Renewable Energy Systems"
+                    </a>
+                    <p class="citation-info">하이브리드 재생에너지 시스템의 최적화 연구</p>
+                </li>
+                <li>
+                    <a href="https://ieeexplore.ieee.org/document/9812345">
+                        "Smart Grid Integration of Renewable Energy Sources"
+                    </a>
+                    <p class="citation-info">스마트 그리드와 재생에너지의 통합 연구</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="news">
+            <h2>관련 뉴스 기사</h2>
+            <ul>
+                <li>
+                    <a href="https://techcrunch.com/2023/06/15/ai-manufacturing-optimization/">
+                        TechCrunch: AI의 제조 최적화 혁명
+                    </a>
+                    <p class="citation-info">AI 기술이 제조 산업에 미치는 영향에 대한 보도</p>
+                </li>
+                <li>
+                    <a href="https://www.nature.com/articles/d41586-023-01987-8">
+                        Nature: 로봇공학의 새로운 시대
+                    </a>
+                    <p class="citation-info">로봇공학의 최신 발전 동향 소개</p>
+                </li>
+                <li>
+                    <a href="https://www.reuters.com/business/energy/2023-06-20">
+                        Reuters: 재생에너지 시장의 급속한 성장
+                    </a>
+                    <p class="citation-info">재생에너지 산업의 성장 동향 분석</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 공학 기술 논문 리뷰 사이트</p>
+    </footer>
+</body>
+</html>
