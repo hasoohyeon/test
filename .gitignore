@@ -7,7 +7,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # Build output
-/build
 /dist
 /.next
 /.cache
@@ -36,7 +35,6 @@ logs
 *.pdb
 
 # React
-client/build/
 client/node_modules/
 server/node_modules/
 
