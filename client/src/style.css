@@ -1,0 +1,173 @@
+body {
+  font-family: 'Noto Sans KR', Arial, sans-serif;
+  background: #f4f6fa;
+  margin: 0;
+  padding: 0;
+}
+.experiment-note-root {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.13);
+  padding: 40px 32px 32px 32px;
+  border: 2px solid #e1eaff;
+}
+h1 {
+  text-align: center;
+  color: #0077c2;
+  margin-bottom: 24px;
+}
+.add-btn {
+  display: block;
+  margin: 0 auto 24px auto;
+  padding: 8px 20px;
+  background: #0077c2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.add-btn:hover {
+  background: #005fa3;
+}
+.experiment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.experiment-card {
+  background: #f7faff;
+  border: 2px solid #b3d1ff;
+  border-radius: 12px;
+  padding: 28px 22px 22px 22px;
+  box-shadow: 0 4px 16px rgba(0,64,128,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 8px;
+  position: relative;
+  transition: box-shadow 0.2s, border 0.2s;
+}
+.experiment-card:hover {
+  box-shadow: 0 8px 32px rgba(0,64,128,0.15);
+  border: 2.5px solid #1976d2;
+}
+.experiment-card input, .experiment-card textarea {
+  background: #f4f8ff;
+  border: 1.5px solid #b3c2d1;
+  border-radius: 6px;
+  font-size: 1.05rem;
+  padding: 8px 10px;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+.experiment-card input:focus, .experiment-card textarea:focus {
+  border: 1.5px solid #1976d2;
+  box-shadow: 0 0 0 2px #b3d1ff44;
+  outline: none;
+}
+.experiment-card input::placeholder, .experiment-card textarea::placeholder {
+  color: #b0b8c3;
+  font-size: 0.98rem;
+}
+.experiment-card label {
+  font-weight: 600;
+  color: #1976d2;
+  margin-bottom: 4px;
+  display: block;
+  letter-spacing: 0.01em;
+}
+.experiment-card .chart-container {
+  background: #fff;
+  border-radius: 8px;
+  border: 1.5px solid #e3e8ee;
+  margin-top: 10px;
+  padding: 10px 0 0 0;
+  min-height: 220px;
+}
+.experiment-card:not(:last-child)::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: linear-gradient(90deg, #e3e8ee 30%, #b3d1ff 70%);
+  margin: 30px 0 0 0;
+}
+
+.title-input {
+  font-size: 1.13rem;
+  font-weight: bold;
+  padding: 10px 10px;
+  border: 2px solid #1976d2;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  background: #eaf3ff;
+  color: #174786;
+  letter-spacing: 0.02em;
+}
+.title-input:focus {
+  border: 2px solid #004ba0;
+  background: #e3f0ff;
+}
+
+textarea, .experiment-card input[type="text"], .experiment-card input[placeholder^="그래프"] {
+  width: 100%;
+  min-height: 32px;
+  padding: 6px;
+  border: 1px solid #b3c2d1;
+  border-radius: 4px;
+  font-size: 1rem;
+  resize: vertical;
+}
+button {
+  margin-top: 4px;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #1976d2 60%, #42a5f5 100%);
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.08rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  box-shadow: 0 2px 6px rgba(25, 118, 210, 0.10);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+button:hover {
+  background: linear-gradient(90deg, #1565c0 40%, #64b5f6 100%);
+  box-shadow: 0 4px 12px rgba(25, 118, 210, 0.17);
+}
+.delete-btn {
+  background: linear-gradient(90deg, #ff5c5c 60%, #ff9a8b 100%);
+  color: #fff;
+  margin-top: 10px;
+}
+.delete-btn:hover {
+  background: linear-gradient(90deg, #c20000 40%, #ffb4a2 100%);
+}
+.add-btn {
+  display: block;
+  margin: 0 auto 24px auto;
+  padding: 10px 26px;
+  background: linear-gradient(90deg, #1976d2 60%, #42a5f5 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.15rem;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.11);
+}
+.add-btn:hover {
+  background: linear-gradient(90deg, #1565c0 40%, #64b5f6 100%);
+}
+
+button:hover {
+  background: #0077c2;
+}
+.delete-btn {
+  background: #ff5c5c;
+}
+.delete-btn:hover {
+  background: #c20000;
+}

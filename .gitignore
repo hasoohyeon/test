@@ -1,0 +1,49 @@
+# Node
+node_modules/
+.env
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+/build
+/dist
+/.next
+/.cache
+coverage
+
+# Local env
+.env.*
+
+# VSCode
+.vscode/
+
+# OS
+Thumbs.db
+Desktop.ini
+
+# Logs
+logs
+*.log
+
+# Mac
+*.DS_Store
+
+# Windows
+*.exe
+*.dll
+*.pdb
+
+# React
+client/build/
+client/node_modules/
+server/node_modules/
+
+# Misc
+*.swp
+*.swo
+.idea/
+*.iml
+*.sublime-workspace
+*.sublime-project
